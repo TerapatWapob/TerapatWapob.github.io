@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="th">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,9 +8,105 @@
   </head>
   <body>
     <div class="container">
-      <center><h1>Assignment 01</h1><p><h3>แบบสอบถาม</h3></p></center>
+      <center><h1>Assignment 01</h1><p><h3>แบบสอบถาม</h3></p>
+      </center>
       <hr>
     </div>
+    <div class="container" style="background-color:rgb(255, 210, 126);">
+    <table border="0" align="center" class="align-content-sm-around" width: 100%>
+      <tbody>
+        <tr>
+          <td colspan="2">ข้อมูลผู้ตอบแบบสอบถาม</td>
+        </tr>
+        <tr>
+          <td width="161">ชื่อ-นามสกุล</td>
+          <td width="400"><input type="text" style="width: 100%;"></td>
+        </tr>
+        <tr>
+          <td>รหัสนักศึกษา</td>
+          <td width="400"><input type="text" style="width: 100%;"></td>
+        </tr>
+        <tr>
+          <td>เพศ</td>
+          <td width="400"><input type="radio">
+            ชาย 
+            <input type="radio">
+            หญิง</td>
+        </tr>
+        <tr>
+          <td>สังกัดคณะ</td>
+          <td width="400">
+			  <select name="Department" id="Department">
+				  <option value="วิทยาศาสตร์">วิทยาศาสตร์</option>
+				  <option value="วิทยาการคอมพิวเตอร์">วิทยาการคอมพิวเตอร์</option>
+				  <option value="ครุศาสตร์">ครุศาสตร์</option>
+				  <option value="บริการธุรกิจและการจัดการ">บริการธุรกิจและการจัดการ</option>
+			  	  <option value="มนุษยศาสตร์">มนุษยศาสตร์</option>
+				  <option value="เทคโนโลยีอุตสาหกรรม">เทคโนโลยีอุตสาหกรรม</option>
+				  <option value="เกษตรศาสตร์">เกษตรศาสตร์</option>
+				  <option value="พยาบาลศาสตร์">พยาบาลศาสตร์</option>
+			      <option value="สาธารณสุขศาสตร์">สาธารณสุขศาสตร์</option>
+				  <option value="แพทย์แผนไทยและทางเลือก">แพทย์แผนไทยและทางเลือก</option>
+				  <option value="นิติศาสตร์">=นิติศาสตร์</option>
+			  </select>
+		  </td>
+        </tr>
+        <tr>
+          <td colspan="2">แม่สีที่ชื่นชอบ<br>
+		    <input type="checkbox" id="red" name="red" value="red">
+		    <label for="red"> สีแดง </label>
+		    <input type="checkbox" id="green" name="green" value="green">
+		    <label for="green"> สีเขียว </label>
+		    <input type="checkbox" id="blue" name="blue" value="blue">
+		    <label for="blue"> สีน้ำเงิน </label>
+		  </td>
+        </tr>
+        <tr>
+          <td colspan="2">ผลไม้ที่ชื่นชอบ<br>
+			<input type="checkbox" id="Mango" name="Mango" value="Mango">
+			<label for="Mango"> มะม่วง </label>
+			<input type="checkbox" id="Custard Apple" name="Custard Apple" value="Custard Apple">
+			<label for="Custard Apple"> น้อยหน่า </label>
+			<input type="checkbox" id="Durian" name="Durian" value="Durian">
+			<label for="Durian"> ทุเรียน </label><br>
+			<input type="checkbox" id="longan" name="longan" value="longan">
+			<label for="longan"> ลำใย </label>
+			<input type="checkbox" id="Guava" name="Guava" value="Guava">
+			<label for="Guava"> ฝรั่ง </label>
+			<input type="checkbox" id="Watermelon" name="Watermelon" value="Watermelon">
+			<label for="Watermelon"> แตงโม </label>
+		  </td>
+        </tr>
+        <tr>
+          <td colspan="2">อาหารที่ชื่นชอบ<br>
+			<input type="checkbox" id="Spicy prawn soup" name="Spicy prawn soup" value="Spicy prawn soup">
+			<label for="Spicy prawn soup"> ต้มยำกุ้ง </label>
+			<input type="checkbox" id="Minced Pork Omelette" name="Minced Pork Omelette" value="Minced Pork Omelette">
+			<label for="Minced Pork Omelette"> ไข่เจียวหมูสับ </label>
+			<input type="checkbox" id="Chicken Galangal Curry" name="Chicken Galangal Curry" value="Chicken Galangal Curry">
+			<label for="Chicken Galangal Curry"> แกงข่าไก่ </label><br>
+			<input type="checkbox" id="Chicken Green Curry" name="Chicken Green Curry" value="Chicken Green Curry">
+			<label for="Chicken Green Curry"> แกงเขียวหวานไก่ </label>
+			<input type="checkbox" id="Pad Thai" name="Pad Thai" value="Pad Thai">
+			<label for="Pad Thai"> ผัดไทย </label>
+			<input type="checkbox" id="Crispy Squid Radna" name="Crispy Squid Radna" value="Crispy Squid Radna">
+			<label for="Crispy Squid Radna"> ราดหน้าหมึกกรอบ </label>
+		  </td>
+			<tr>
+          <td colspan="2"><center><input class="favorite styled" type="button" value="บันทึก" onclick="submitForm()"/></center></td>
+        </tr>
+        </tr>
+      </tbody>
+    </table>
+  </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  <script>
+    function submitForm() {
+		alert('ข้อมูลของท่านได้รับการบันทึกแล้ว');
+		location.reload();
+    }
+  </script>
+
   </body>
 </html>
